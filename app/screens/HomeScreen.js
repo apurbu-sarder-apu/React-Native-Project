@@ -1,7 +1,6 @@
 import React from 'react';
-import {View, Text, SafeAreaView, StyleSheet, Platform} from 'react-native';
+import { View, Text, SafeAreaView, StyleSheet, Platform } from 'react-native';
 import Constants from 'expo-constants';
-
 
 const HomeScreen = () => {
     return (
@@ -10,7 +9,6 @@ const HomeScreen = () => {
         </SafeAreaView>
     )
 }
-
 
 const styles = StyleSheet.create({
     view: {

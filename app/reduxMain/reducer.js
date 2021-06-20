@@ -68,5 +68,5 @@ const commentReducer = (commentState = {isLoading: true , comments: [] }, action
 
 export const Reducer = combineReducers({
     photos: photoReducer,
-    comments: commentReducer,
+    comments: commentReducer
 });

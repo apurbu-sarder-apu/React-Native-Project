@@ -2,7 +2,7 @@ import React from 'react';
 import {View, StyleSheet, Image, Text } from 'react-native';
 import LoadComments from '../components/LoadComments';
 import CommentForm from '../components/CommentForm';
-import { baseUrl } from '../redux/baseUrl';
+import { baseUrl } from '../reduxMain/baseUrl';
 
 const PhotoDetail = (props) => {
     return (
@@ -11,9 +11,9 @@ const PhotoDetail = (props) => {
             <View style={styles.bodyview}>
                 <Text style={styles.firsttext}>{props.photo.name}</Text>
                 <Text style={styles.secondtext}>{props.photo.description}</Text>
-                <hr />
+                
                 <LoadComments comments={props.comments} commentIsLoading={props.commentIsLoading}></LoadComments>
-                <hr />
+                
                 <CommentForm photoId={props.photo.id} addComment={props.addComment}/>
             </View>
         </View>

@@ -1,7 +1,7 @@
 import React from 'react';
 import HomeScreen from './screens/HomeScreen';
-import MenuScreen from './screens/MenuScreen';
-import DishDetailScreen from './screens/DishDetailScreen';
+import Menu from './screens/Menu';
+import MenuItem from './screens/MenuItem';
 import Icon from './components/Icon';
 
 import { createDrawerNavigator } from '@react-navigation/drawer';
@@ -33,8 +33,8 @@ const MenuStack = () => {
                     fontWeight: 'bold',
                 }
             }}>
-            <Stack.Screen name="Menu" component={MenuScreen} />
-            <Stack.Screen name="Dish Detail" component={DishDetailScreen} options={({ route }) => ({ title: route.params.dish.name })} />
+            <Stack.Screen name="Menu" component={MenuItem} />
+            <Stack.Screen name="Dish Detail" component={Menu} options={({ route }) => ({ title: route.params.dish.name })} />
         </Stack.Navigator>
     )
 }

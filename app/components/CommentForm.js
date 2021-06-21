@@ -21,7 +21,7 @@ class CommentForm extends Component {
 
     handleSubmit = event => {
         //console.log(this.state);
-        this.props.addComment(this.props.photoId, this.state.author, this.state.comment);
+        this.props.addComment(this.props.dishId, this.state.author, this.state.comment);
         this.setState({
                 author: '',
                 comment: ''
